@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Feature Flags -->
+    <bool name="enable_animations">true</bool>
+    <bool name="enable_sound">true</bool>
+    <bool name="enable_vibration">true</bool>
+    <bool name="enable_auto_save">true</bool>
+
+    <!-- Widget Settings -->
+    <bool name="widget_resizable">true</bool>
+    <bool name="widget_auto_update">false</bool>
+
+    <!-- Debug Settings -->
+    <bool name="debug_mode">false</bool>
+    <bool name="show_debug_info">false</bool>
+
+</resources>

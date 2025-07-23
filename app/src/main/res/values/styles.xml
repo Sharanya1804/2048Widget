@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Widget Tiles -->
+    <style name="TileStyleWidget">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/nothing_text</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/tile_background</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="TileStyleMain" parent="TileStyleWidget">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <!-- Widget Buttons -->
+    <style name="ControlButtonStyleWidget">
+        <item name="android:textColor">@color/nothing_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="ControlButtonStyleMain" parent="ControlButtonStyleWidget">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <!-- Reset Buttons -->
+    <style name="ResetButtonStyleWidget">
+        <item name="android:textColor">@color/nothing_white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:background">@drawable/reset_button_background</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="ResetButtonStyleMain" parent="ResetButtonStyleWidget">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+</resources>

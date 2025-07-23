@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+    <!-- Background rounded rectangle -->
+    <path
+        android:fillColor="@color/nothing_surface"
+        android:pathData="M4,0h64a4,4 0 0 1 4,4v64a4,4 0 0 1 -4,4H4a4,4 0 0 1 -4,-4V4a4,4 0 0 1 4,-4z"/>
+    <!-- Grid preview: 2×2 lighter squares -->
+    <group android:translateX="8" android:translateY="8">
+        <path
+            android:fillColor="@color/nothing_tile_empty"
+            android:pathData="M0,0h28v28h-28z"/>
+        <path
+            android:fillColor="@color/nothing_tile_empty"
+            android:pathData="M36,0h28v28h-28z"/>
+        <path
+            android:fillColor="@color/nothing_tile_empty"
+            android:pathData="M0,36h28v28h-28z"/>
+        <path
+            android:fillColor="@color/nothing_tile_empty"
+            android:pathData="M36,36h28v28h-28z"/>
+    </group>
+    <!-- “2048” title text simulated by rectangle -->
+    <path
+        android:fillColor="@color/nothing_text_secondary"
+        android:pathData="M8,56h56v4h-56z"/>
+</vector>

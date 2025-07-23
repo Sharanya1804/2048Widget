@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nothing_background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- App Icon/Logo Area -->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="32dp" />
+        <TextView
+            android:id="@+id/intro_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2048 Widget"
+            android:textSize="32sp"
+            android:textColor="@color/nothing_text"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/intro_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play the classic 2048 game directly from your home screen with this widget."
+            android:textSize="16sp"
+            android:textColor="@color/nothing_text_secondary"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Game Preview Grid (Static) -->
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@drawable/grid_background"
+            android:padding="8dp"
+            android:layout_marginBottom="32dp">
+
+            <!-- Sample 2x2 Preview Grid -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/tile_background"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/tile_text_color"
+                    android:textSize="18sp"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/tile_text_stroke"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/tile_background"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/tile_text_color"
+                    android:textSize="18sp"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/tile_text_stroke"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/tile_background"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/tile_text_color"
+                    android:textSize="18sp"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/tile_background"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/tile_text_color"
+                    android:textSize="18sp"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/tile_text_stroke"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Instructions -->
+        <TextView
+            android:id="@+id/intro_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How to add the widget:\n\n1. Long press on your home screen\n2. Select 'Widgets'\n3. Find '2048 Game' widget\n4. Drag it to your home screen\n5. Enjoy playing!"
+            android:textSize="14sp"
+            android:textColor="@color/nothing_text"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Add Widget Button -->
+        <Button
+            android:id="@+id/btn_add_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Widget to Home Screen"
+            android:textColor="@color/nothing_white"
+            android:textSize="16sp"
+            android:fontFamily="monospace"
+            android:background="@drawable/reset_button_background"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp" />
+
+        <!-- Widget Status -->
+        <TextView
+            android:id="@+id/widget_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Widget not added yet. Tap the button above to add it."
+            android:textSize="12sp"
+            android:textColor="@color/nothing_text_secondary"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nothing OS Themed "
+            android:textSize="10sp"
+            android:textColor="@color/nothing_text_secondary"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

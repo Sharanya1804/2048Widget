@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nothing OS Base Colors -->
+    <color name="nothing_black">#000000</color>
+    <color name="nothing_white">#FFFFFF</color>
+    <color name="nothing_background">#1B1B1D</color>
+    <color name="nothing_surface">#212124</color>
+    <color name="nothing_gray">#808080</color>
+    <color name="nothing_light_gray">#B0B0B0</color>
+    <color name="nothing_dark_gray">#404040</color>
+    <color name="nothing_red">#D71921</color>
+
+    <!-- Widget Text Colors -->
+    <color name="nothing_text">#FFFFFF</color>
+    <color name="nothing_text_primary">#FFFFFF</color>
+    <color name="nothing_text_secondary">#B0B0B0</color>
+
+    <!-- Widget Tile Colors -->
+    <color name="nothing_tile_empty">#2A2A2C</color>
+    <color name="nothing_tile_low">#3A3A3C</color>
+    <color name="nothing_tile_mid">#4A4A4C</color>
+    <color name="nothing_tile_high">#5A5A5C</color>
+    <color name="nothing_tile_max">#D71921</color>
+    <color name="tile_0">#FFFFFF</color>
+    <color name="tile_2">#F0F0F0</color>
+    <color name="tile_4">#E0E0E0</color>
+    <color name="tile_8">#D0D0D0</color>
+    <color name="tile_16">#C0C0C0</color>
+    <color name="tile_32">#B0B0B0</color>
+    <color name="tile_64">#A0A0A0</color>
+    <color name="tile_128">#909090</color>
+    <color name="tile_256">#808080</color>
+    <color name="tile_512">#707070</color>
+    <color name="tile_1024">#606060</color>
+    <color name="tile_2048">#505050</color>
+    <!-- Widget Button Colors -->
+    <color name="nothing_button">#3A3A3C</color>
+    <color name="nothing_button_reset">#D71921</color>
+
+    <!-- Widget Container Colors -->
+    <color name="nothing_container_border">#404040</color>
+    <color name="nothing_transparent">#00000000</color>
+    <color name="tile_text_color">#FFFFFF</color>
+    <color name="tile_text_stroke">#000000</color>
+    <color name="default_tile">#2B2B2F</color>
+</resources>

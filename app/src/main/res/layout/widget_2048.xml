@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:padding="8dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2048"
+            android:textSize="12sp"
+            android:textColor="@color/nothing_text"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="12sp"
+            android:textColor="@color/nothing_text_secondary"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+
+    <!-- Game Grid -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/grid_background"
+        android:padding="4dp">
+
+        <!-- Row 0 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tile_0_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_0_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_0_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_0_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+        </LinearLayout>
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tile_1_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_1_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_1_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_1_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tile_2_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_2_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_2_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_2_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tile_3_0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_3_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_3_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+            <TextView
+                android:id="@+id/tile_3_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tile_text_color"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:background="@drawable/tile_background"
+                android:layout_margin="2dp"
+                android:shadowColor="@color/tile_text_stroke"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Control Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="↑"
+                android:textColor="@color/nothing_text"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:background="@drawable/button_background"
+                android:layout_margin="1dp"
+                android:minHeight="32dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="←"
+                    android:textColor="@color/nothing_text"
+                    android:textSize="14sp"
+                    android:fontFamily="monospace"
+                    android:background="@drawable/button_background"
+                    android:layout_margin="1dp"
+                    android:minHeight="32dp" />
+
+                <Button
+                    android:id="@+id/btn_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="→"
+                    android:textColor="@color/nothing_text"
+                    android:textSize="14sp"
+                    android:fontFamily="monospace"
+                    android:background="@drawable/button_background"
+                    android:layout_margin="1dp"
+                    android:minHeight="32dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="↓"
+                android:textColor="@color/nothing_text"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:background="@drawable/button_background"
+                android:layout_margin="1dp"
+                android:minHeight="32dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/widget_background"
+            android:fontFamily="monospace"
+            android:minWidth="60dp"
+            android:minHeight="32dp"
+            android:text="Reset"
+            android:textColor="@color/nothing_white"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Animation Durations -->
+    <integer name="tile_animation_duration">200</integer>
+    <integer name="button_animation_duration">100</integer>
+    <integer name="fade_animation_duration">300</integer>
+
+    <!-- Game Settings -->
+    <integer name="grid_size">4</integer>
+    <integer name="win_tile_value">2048</integer>
+    <integer name="initial_tile_count">2</integer>
+    <integer name="tile_spawn_chance_4">10</integer>
+
+    <!-- Widget Settings -->
+    <integer name="widget_update_interval">0</integer>
+    <integer name="widget_target_cell_width">4</integer>
+    <integer name="widget_target_cell_height">4</integer>
+
+</resources>
